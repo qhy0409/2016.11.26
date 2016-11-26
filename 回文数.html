@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function test(n,m) {
+        for (var i = n; i <= m; i++) {
+            var c = 0;
+            var a = i % 10;
+            var b = Math.floor(i / 10);
+            c = c * 10 + a;
+            while (b != 0) {
+                a = b % 10;
+                b = Math.floor(b / 10);
+                c = c * 10 + a;
+            }
+            if (i == c) {
+                console.log(i);
+            }
+        }
+    }
+    var x=prompt("x");
+    var y=prompt("y");
+    test(x,y);
+</script>
+</body>
+</html>
